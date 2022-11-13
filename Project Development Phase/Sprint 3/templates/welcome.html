@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'welcome.css')}}">
+ 	<link rel="stylesheet" type="text/css" href="../static/welcome.css">
+</head>
+<body>
+<div class="main">
+	<h1 class="name">Hi, {{name}}</h1><hr style="width: 30%">
+	<h3 class="email">{{email}}</h3>
+	<br>
+	<center><iframe frameborder='0' noresize='noresize' style='margin-left :25%;background: transparent; width: 65%; height:50%;' src="{{ iframe }}" frameborder="0"></iframe></center>
+</div>
+</body>
+</html>
